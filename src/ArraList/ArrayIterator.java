@@ -4,18 +4,18 @@ import java.util.Iterator;
 
 public class ArrayIterator<E> implements Iterator<E> {
     private int index = 0;
-    private E[] values;
+    private E[] data;
 
     ArrayIterator(E[] values){
-        this.values = values;
+        this.data = values;
     }
     @Override
     public boolean hasNext() {
-        return index < values.length;
+        return index < data.length;
     }
 
     @Override
     public E next() {
-        return values[index++];
+        return data[index++];
     }
 }
