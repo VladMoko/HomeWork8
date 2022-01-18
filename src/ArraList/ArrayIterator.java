@@ -6,8 +6,8 @@ public class ArrayIterator<E> implements Iterator<E> {
     private int index = 0;
     private E[] data;
 
-    ArrayIterator(E[] values){
-        this.data = values;
+    ArrayIterator(E[] data){
+        this.data = data;
     }
     @Override
     public boolean hasNext() {
