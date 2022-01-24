@@ -1,6 +1,5 @@
 package MyStack;
 
-import java.util.Arrays;
 
 public class MyStack<T> implements Methods<T> {
 
