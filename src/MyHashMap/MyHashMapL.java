@@ -122,7 +122,7 @@ public class HashMap<K, V>  implements Interface<K,V>{
     @Override
     public void clear() {
         for (int i = 0; i < hashTable.length; i++) {
-            hashTable[i] == null;
+            hashTable[i] = null;
         }
     }
 
