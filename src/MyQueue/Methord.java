@@ -6,6 +6,6 @@ public interface Methord<T> {
     void clear();
     int  size();
     T peek();
-    T polo();
+    T poll();
     T get(int index);
 }

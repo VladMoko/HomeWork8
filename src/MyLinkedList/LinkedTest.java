@@ -10,11 +10,11 @@ public class LinkedTest {
         System.out.println(stringLinked.size()); // 3
         System.out.println();
 
-        System.out.println(stringLinked.getElement(0)); // abc
+        System.out.println(stringLinked.get(0)); // abc
         System.out.println();
 
         stringLinked.remove(1); // 123
-        System.out.println(stringLinked.getElement(1));
+        System.out.println(stringLinked.get(1));
         System.out.println();
 
         stringLinked.clear();

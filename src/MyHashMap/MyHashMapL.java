@@ -6,12 +6,12 @@ import java.util.List;
 import java.util.Objects;
 
 
-public class HashMap<K, V>  implements Interface<K,V>{
+public class MyHashMap<K, V>  implements Interface<K,V>{
     private Node<K, V>[] hashTable;
     private int size = 0;
     private float threshold;
 
-    public HashMap(){
+    public MyHashMap(){
         hashTable = new Node[16];
         threshold = hashTable.length * 0.75f;
     }
@@ -36,7 +36,7 @@ public class HashMap<K, V>  implements Interface<K,V>{
         }
 
         Node<K, V> newNode = new Node<>(key, value);
-        int index = newNode.hash();
+        int index = newNode.hash(key);
 
         if(hashTable[index] == null){
             return simpleAdd(index, newNode);
@@ -202,7 +202,7 @@ public class HashMap<K, V>  implements Interface<K,V>{
             return nodes;
         }
 
-        private int hash(){
+        private int hash(K key){
             return hashCode() % hashTable.length;
         }
 

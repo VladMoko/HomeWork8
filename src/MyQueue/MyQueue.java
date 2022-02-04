@@ -71,7 +71,7 @@ public class MyQueue<T> implements Methord<T> {
 
 
     @Override
-    public T polo() {
+    public T poll() {
         if (size() == 0) {
             return null;
         }

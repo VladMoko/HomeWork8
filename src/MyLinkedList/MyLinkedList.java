@@ -55,7 +55,7 @@ public class MyLinkedList<E> implements Method<E> {
     }
 
     @Override
-    public E getElement(int index) {
+    public E get(int index) {
         Node<E> target = fstNode.getNextElement();
         for (int i = 0; i < index; i++) {
             target = getNextElement(target);

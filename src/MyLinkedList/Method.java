@@ -5,5 +5,5 @@ public interface Method<E> {
     E remove(int index);
     void clear();
     int size();
-    E getElement(int index);
+    E get(int index);
 }

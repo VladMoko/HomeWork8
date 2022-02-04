@@ -23,7 +23,7 @@ public class Test {
         System.out.println();
 
         //Char
-        System.out.println(test.polo());
+        System.out.println(test.poll());
         System.out.println();
 
         //null
