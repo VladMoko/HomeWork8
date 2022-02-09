@@ -19,6 +19,7 @@ public class MyHashMap<K, V>  implements Interface<K,V>{
 
 
     private int hash(Node<K, V> node){
+
         return node.hashCode() % hashTable.length;
     }
 
